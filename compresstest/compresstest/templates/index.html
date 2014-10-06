@@ -1,0 +1,17 @@
+<!DOCTYPE html> {% load compress %}
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Compress test</title>
+
+        {% compress css %}
+        <link rel="stylesheet" href="/static/other.css" type="text/css" charset="utf-8">
+        <link rel="stylesheet" href="/static/compress.css" type="text/css" charset="utf-8">
+        {% endcompress %}
+
+    </head>
+    <body>
+        <div class="compress-test">compress-test, this should be red</div>
+        <div class="compress-test2">compress-test2, this should be yellow</div>
+    </body>
+</html>
